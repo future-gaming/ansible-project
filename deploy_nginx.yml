@@ -2,5 +2,6 @@
 - name: Deploy Nginx on EC2 instances
   hosts: Webserver
   become: true
+  serial: 1
   roles:
     - nginx
